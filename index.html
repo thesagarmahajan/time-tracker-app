@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="time-tracker.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container pt-4">
+        <h1 class="mb-4">Time Tracker</h1> 
+        <div class="row">
+            <div class="col-1">
+                <button id="controlButton" class="btn btn-primary">
+                    <i class="bi bi-play-fill"></i>
+                </button>
+            </div>
+            <div class="col-9">
+                <input type="text" id="task" placeholder="Current Task" class="form-control">
+            </div>
+            <div class="col-2">
+                <div id="timer">
+                    <h2>0:0:0</h2>
+                </div>
+            </div>
+        </div>    
+        <ul id="taskList" class="list-group mt-3">
+            <div class="row">
+                <div class="col-6">
+                    <h4>Completed Tasks</h4>
+                </div>
+                <div class="col-6">
+                    <h4>Total Time: </h4>
+                </div>
+            </div>
+        </ul>
+    </div>
+    <script src="./time-tracker.js"></script>
+</body>
+</html>
